@@ -1,0 +1,44 @@
+2026-11-08 17:28:56,719 INFO live route=28 trips=13 scored=13 12.0s
+2026-11-08 17:29:02,273 INFO live route=1 trips=15 scored=15 5.5s
+2026-11-08 17:29:07,825 INFO live route=39 trips=14 scored=14 5.5s
+2026-11-08 17:30:23,742 INFO live route=28 trips=14 scored=6 skipped={'not_started': 8, 'unscheduled': 0} 12.7s
+2026-11-08 17:30:29,595 INFO live route=39 trips=14 scored=4 skipped={'not_started': 7, 'unscheduled': 3} 5.8s
+2026-11-08 17:30:35,283 INFO live route=66 trips=16 scored=7 skipped={'not_started': 9, 'unscheduled': 0} 5.7s
+2026-11-08 17:31:23,077 WARNING MBTA rate limit /predictions
+2026-11-08 17:31:23,081 WARNING MBTA request failed /predictions: offline test
+2026-11-08 17:31:23,082 WARNING MBTA request failed /predictions: offline test
+2026-11-08 17:31:23,099 WARNING weather failed: offline test
+2026-11-08 17:31:29,646 WARNING MBTA request failed /predictions: offline test
+2026-11-08 17:32:07,123 WARNING MBTA request failed /predictions: offline test
+2026-11-08 17:57:11,656 INFO live route=66 trips=12 scored=5 skipped={'not_started': 7, 'unscheduled': 0} 13.9s
+2026-11-08 18:24:32,011 WARNING MBTA rate limit /predictions
+2026-11-08 18:24:32,013 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:24:32,013 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:24:33,513 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:25:04,930 INFO live route=28 trips=13 scored=5 skipped={'not_started': 8, 'unscheduled': 0} 6.9s
+2026-11-08 18:25:10,495 INFO live route=66 trips=15 scored=7 skipped={'not_started': 8, 'unscheduled': 0} 5.6s
+2026-11-08 18:29:01,250 WARNING MBTA rate limit /predictions
+2026-11-08 18:29:01,252 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:29:01,252 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:29:01,254 WARNING weather failed: offline test
+2026-11-08 18:29:10,032 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:29:50,568 WARNING MBTA rate limit /predictions
+2026-11-08 18:29:50,570 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:29:50,570 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:29:50,572 WARNING weather failed: offline test
+2026-11-08 18:29:58,672 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:30:38,325 INFO live route=1 trips=14 scored=5 skipped={'not_started': 9, 'unscheduled': 0} 8.1s
+2026-11-08 18:30:59,390 WARNING MBTA rate limit /predictions
+2026-11-08 18:30:59,392 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:30:59,392 WARNING MBTA request failed /predictions: offline test
+2026-11-08 18:30:59,393 WARNING weather failed: offline test
+2026-11-08 18:31:08,582 WARNING MBTA request failed /predictions: offline test
+2026-11-08 19:59:54,821 INFO live route=28 trips=13 scored=4 skipped={'not_started': 9, 'unscheduled': 0} 9.6s
+2026-11-08 20:00:01,044 INFO live route=66 trips=15 scored=6 skipped={'not_started': 9, 'unscheduled': 0} 6.2s
+2026-11-08 20:13:33,030 INFO live route=66 trips=15 scored=7 skipped={'not_started': 8, 'unscheduled': 0} 9.4s
+2026-11-08 20:18:03,059 INFO live route=1 trips=13 scored=5 skipped={'not_started': 8, 'unscheduled': 0} 12.0s
+2026-11-08 20:20:39,449 WARNING MBTA rate limit /predictions
+2026-11-08 20:20:39,453 WARNING MBTA request failed /predictions: offline test
+2026-11-08 20:20:39,453 WARNING MBTA request failed /predictions: offline test
+2026-11-08 20:20:39,456 WARNING weather failed: offline test
+2026-11-08 20:20:50,301 WARNING MBTA request failed /predictions: offline test

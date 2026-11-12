@@ -1,0 +1,46 @@
+|--- hist_stop_hour <= 0.32
+|   |--- hist_stop_hour <= 0.18
+|   |   |--- hist_stop_hour <= 0.11
+|   |   |   |--- hist_stop_hour <= 0.08
+|   |   |   |   |--- value: [0.06]
+|   |   |   |--- hist_stop_hour >  0.08
+|   |   |   |   |--- value: [0.10]
+|   |   |--- hist_stop_hour >  0.11
+|   |   |   |--- recent_route_28d <= 0.32
+|   |   |   |   |--- value: [0.14]
+|   |   |   |--- recent_route_28d >  0.32
+|   |   |   |   |--- value: [0.22]
+|   |--- hist_stop_hour >  0.18
+|   |   |--- recent_route_28d <= 0.32
+|   |   |   |--- recent_route_28d <= 0.23
+|   |   |   |   |--- value: [0.19]
+|   |   |   |--- recent_route_28d >  0.23
+|   |   |   |   |--- value: [0.25]
+|   |   |--- recent_route_28d >  0.32
+|   |   |   |--- stop_pos <= 0.62
+|   |   |   |   |--- value: [0.31]
+|   |   |   |--- stop_pos >  0.62
+|   |   |   |   |--- value: [0.41]
+|--- hist_stop_hour >  0.32
+|   |--- recent_route_28d <= 0.30
+|   |   |--- recent_route_28d <= 0.24
+|   |   |   |--- scheduled_headway <= 12.50
+|   |   |   |   |--- value: [0.30]
+|   |   |   |--- scheduled_headway >  12.50
+|   |   |   |   |--- value: [0.22]
+|   |   |--- recent_route_28d >  0.24
+|   |   |   |--- hist_stop_hour <= 0.45
+|   |   |   |   |--- value: [0.34]
+|   |   |   |--- hist_stop_hour >  0.45
+|   |   |   |   |--- value: [0.42]
+|   |--- recent_route_28d >  0.30
+|   |   |--- hist_stop_hour <= 0.42
+|   |   |   |--- pm_peak <= 0.50
+|   |   |   |   |--- value: [0.44]
+|   |   |   |--- pm_peak >  0.50
+|   |   |   |   |--- value: [0.56]
+|   |   |--- hist_stop_hour >  0.42
+|   |   |   |--- hist_stop_hour <= 0.65
+|   |   |   |   |--- value: [0.55]
+|   |   |   |--- hist_stop_hour >  0.65
+|   |   |   |   |--- value: [0.72]

@@ -1,0 +1,17 @@
+leaf,n,surrogate_p,xgb_p,actual_late,share_%,rule
+30,537,0.7181020982190817,0.625509,0.6182495344506518,1.0739999999999998,hist_stop_hour > 0.322 AND recent_route_28d > 0.298 AND hist_stop_hour > 0.42 AND hist_stop_hour > 0.647
+27,580,0.5577911627581603,0.43938485,0.45,1.16,hist_stop_hour > 0.322 AND recent_route_28d > 0.298 AND hist_stop_hour <= 0.42 AND pm_peak > 0.5
+29,8238,0.5491207849259264,0.46070594,0.437727603787327,16.476,hist_stop_hour > 0.322 AND recent_route_28d > 0.298 AND hist_stop_hour > 0.42 AND hist_stop_hour <= 0.647
+26,4573,0.43870336009886035,0.35735214,0.3385086376558058,9.146,hist_stop_hour > 0.322 AND recent_route_28d > 0.298 AND hist_stop_hour <= 0.42 AND pm_peak <= 0.5
+23,871,0.42169935865624264,0.36065403,0.34443168771526983,1.7420000000000002,hist_stop_hour > 0.322 AND recent_route_28d <= 0.298 AND recent_route_28d > 0.241 AND hist_stop_hour > 0.448
+15,2306,0.40999085501306104,0.31988865,0.32003469210754554,4.612,hist_stop_hour <= 0.322 AND hist_stop_hour > 0.179 AND recent_route_28d > 0.319 AND stop_pos > 0.62
+22,2109,0.34374746999399436,0.28388542,0.2574679943100996,4.218,hist_stop_hour > 0.322 AND recent_route_28d <= 0.298 AND recent_route_28d > 0.241 AND hist_stop_hour <= 0.448
+14,4109,0.312305050472792,0.25303614,0.252616208323193,8.218,hist_stop_hour <= 0.322 AND hist_stop_hour > 0.179 AND recent_route_28d > 0.319 AND stop_pos <= 0.62
+19,3613,0.29740452604270506,0.24449144,0.23775256019928037,7.226000000000001,hist_stop_hour > 0.322 AND recent_route_28d <= 0.298 AND recent_route_28d <= 0.241 AND scheduled_headway <= 12.5
+12,3521,0.2540379159394619,0.19297354,0.19738710593581368,7.042,hist_stop_hour <= 0.322 AND hist_stop_hour > 0.179 AND recent_route_28d <= 0.319 AND recent_route_28d > 0.231
+20,3853,0.21961311795232186,0.21413429,0.1933558266286011,7.706,hist_stop_hour > 0.322 AND recent_route_28d <= 0.298 AND recent_route_28d <= 0.241 AND scheduled_headway > 12.5
+8,1809,0.21936391533685143,0.16194305,0.1691542288557214,3.618,hist_stop_hour <= 0.322 AND hist_stop_hour <= 0.179 AND hist_stop_hour > 0.113 AND recent_route_28d > 0.318
+11,7303,0.19421305196095223,0.15561359,0.13912090921539094,14.606,hist_stop_hour <= 0.322 AND hist_stop_hour > 0.179 AND recent_route_28d <= 0.319 AND recent_route_28d <= 0.231
+7,3680,0.14381155784875535,0.10026051,0.0875,7.359999999999999,hist_stop_hour <= 0.322 AND hist_stop_hour <= 0.179 AND hist_stop_hour > 0.113 AND recent_route_28d <= 0.318
+5,1796,0.10400700134321834,0.07754412,0.09688195991091314,3.592,hist_stop_hour <= 0.322 AND hist_stop_hour <= 0.179 AND hist_stop_hour <= 0.113 AND hist_stop_hour > 0.0791
+4,1102,0.05979814319590364,0.0443359,0.03901996370235935,2.204,hist_stop_hour <= 0.322 AND hist_stop_hour <= 0.179 AND hist_stop_hour <= 0.113 AND hist_stop_hour <= 0.0791

@@ -1,0 +1,8 @@
+,coverage
+calendar,100.0
+weather,99.98
+events (rows flagged),3.05
+gtfs segment (non-first timepoints),94.63
+gtfs stop coordinates,96.58
+ridership exact hour,93.42
+ridership incl. fallback,93.99

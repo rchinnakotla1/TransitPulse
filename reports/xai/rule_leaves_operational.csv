@@ -1,0 +1,15 @@
+leaf,n,surrogate_p,xgb_p,actual_late,share_%,rule
+22,5561,0.9950329333870688,0.9937262,0.9940658155008092,11.122,prev_tp_delay > 5.03 AND prev_tp_delay > 6.76 AND stop_pos <= 0.964 AND seg_sched_min <= 7.5
+26,1022,0.9530395519167845,0.9474107,0.9569471624266145,2.044,prev_tp_delay > 5.03 AND prev_tp_delay > 6.76 AND stop_pos > 0.964 AND prev_tp_delay > 8.74
+23,663,0.9503353893068731,0.9432999,0.9487179487179487,1.3259999999999998,prev_tp_delay > 5.03 AND prev_tp_delay > 6.76 AND stop_pos <= 0.964 AND seg_sched_min > 7.5
+18,1674,0.8653839204783881,0.8579765,0.8596176821983273,3.3480000000000003,prev_tp_delay > 5.03 AND prev_tp_delay <= 6.76 AND stop_pos <= 0.964 AND prev_tp_delay > 5.66
+17,1200,0.6777008657207418,0.6476565,0.6466666666666666,2.4,prev_tp_delay > 5.03 AND prev_tp_delay <= 6.76 AND stop_pos <= 0.964 AND prev_tp_delay <= 5.66
+25,423,0.5417902381278408,0.5275416,0.541371158392435,0.8460000000000001,prev_tp_delay > 5.03 AND prev_tp_delay > 6.76 AND stop_pos > 0.964 AND prev_tp_delay <= 8.74
+12,1333,0.4723057208413033,0.44151235,0.4568642160540135,2.666,prev_tp_delay <= 5.03 AND prev_tp_delay > 3.77 AND stop_pos <= 0.926 AND prev_tp_delay > 4.41
+11,1561,0.2952655929223366,0.26207182,0.27994875080076875,3.1220000000000003,prev_tp_delay <= 5.03 AND prev_tp_delay > 3.77 AND stop_pos <= 0.926 AND prev_tp_delay <= 4.41
+5,3032,0.2610237953335973,0.21658197,0.22064643799472294,6.064,prev_tp_delay <= 5.03 AND prev_tp_delay <= 3.77 AND seg_sched_min <= 0 AND hist_stop_hour > 0.175
+19,506,0.19876280707138766,0.16352579,0.17193675889328064,1.012,prev_tp_delay > 5.03 AND prev_tp_delay <= 6.76 AND stop_pos > 0.964
+8,3890,0.12764007030345145,0.106281824,0.10848329048843187,7.779999999999999,prev_tp_delay <= 5.03 AND prev_tp_delay <= 3.77 AND seg_sched_min > 0 AND prev_tp_delay > 2.69
+4,2918,0.12415649832692473,0.09565403,0.09492803289924606,5.836,prev_tp_delay <= 5.03 AND prev_tp_delay <= 3.77 AND seg_sched_min <= 0 AND hist_stop_hour <= 0.175
+13,446,0.06662537374971113,0.07276351,0.0515695067264574,0.8920000000000001,prev_tp_delay <= 5.03 AND prev_tp_delay > 3.77 AND stop_pos > 0.926
+7,25771,0.022941453007681103,0.015895007,0.01641379845562842,51.542,prev_tp_delay <= 5.03 AND prev_tp_delay <= 3.77 AND seg_sched_min > 0 AND prev_tp_delay <= 2.69

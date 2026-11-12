@@ -1,0 +1,7 @@
+step,rows_remaining,rows_removed,pct_of_raw
+raw rows (scoped routes),9900345,0,100.0
+drop exact duplicates,9900345,0,100.0
+drop missing scheduled time,9900345,0,100.0
+drop missing actual (cancelled / unobserved),9261442,638903,93.55
+drop duplicate stop events (same trip/stop/sched),9261401,41,93.55
+drop outliers (delay < -30 min or > 120 min),9258150,3251,93.51

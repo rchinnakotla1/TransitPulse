@@ -1,0 +1,13 @@
+file,rows_raw,null_service_date,null_route_id,null_direction_id,null_half_trip_id,null_stop_id,null_time_point_id,null_time_point_order,null_point_type,null_standard_type,null_scheduled,null_actual,null_scheduled_headway,null_headway,exact_duplicates,key_duplicates,seconds
+MBTA-Bus-Arrival-Departure-Times_2025-01.csv,2362132,0,0,0,97,0,0,0,0,0,0,121001,67426,269199,0,48,17.0
+MBTA-Bus-Arrival-Departure-Times_2025-02.csv,2134786,0,0,0,36,0,0,0,0,0,0,109053,60196,245179,0,45,12.9
+MBTA-Bus-Arrival-Departure-Times_2025-03.csv,2358661,0,0,0,40,0,0,0,0,0,0,119349,67394,268698,0,60,15.1
+MBTA-Bus-Arrival-Departure-Times_2025-04.csv,2327708,0,0,0,37,0,0,0,0,0,0,115397,65354,256308,0,46,17.4
+MBTA-Bus-Arrival-Departure-Times_2025-05.csv,2374824,0,0,0,62,0,0,0,0,0,0,127150,67680,278645,0,56,16.5
+MBTA-Bus-Arrival-Departure-Times_2025-06.csv,2299212,0,0,0,70,0,0,0,0,0,0,137303,64464,290297,0,33,19.0
+MBTA-Bus-Arrival-Departure-Times_2025-07.csv,2375950,0,0,0,38,0,0,0,0,0,0,120979,63684,264389,0,0,17.3
+MBTA-Bus-Arrival-Departure-Times_2025-08.csv,2370600,0,0,0,62,0,0,0,0,0,0,132381,64370,283617,0,12,12.9
+MBTA-Bus-Arrival-Departure-Times_2025-09.csv,2362666,0,0,0,63,0,0,0,0,0,0,118491,66153,266083,0,52,14.6
+MBTA-Bus-Arrival-Departure-Times_2025-10.csv,2472273,0,0,0,69,0,0,0,0,0,0,123251,68890,277563,0,7,14.1
+MBTA-Bus-Arrival-Departure-Times_2025-11.csv,2316619,0,0,0,62,0,0,0,0,0,0,107168,64037,244957,0,43,11.7
+MBTA-Bus-Arrival-Departure-Times_2025-12.csv,2482227,0,0,0,48,0,0,0,0,0,0,118273,67325,267290,0,30,17.7
