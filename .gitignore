@@ -11,3 +11,4 @@ models/*
 !models/XGB_operational.json
 
 .pytest_cache/
+logs/pipeline_*.log

@@ -24,6 +24,31 @@ rider communications) in a Streamlit website with a live mode.
 
 No retraining is needed: the deployed XGBoost models (`models/XGB_*.json`) and all app data (`reports/`) are in the repo.
 
+## Re-create everything from scratch (double-click scripts, no code editor)
+
+Everything needed is in this repository: code, tests, notebooks, results, the tuned model settings and the inputs that
+were downloaded by hand. The large data (~10 GB) and the other models are re-created by the scripts below.
+
+| Script | What it does | Approx. time |
+|---|---|---|
+| **`run_all_steps.bat`** | runs steps 1-9 in order (asks Fast / Full training) | several hours |
+| `steps\1_download_data.bat` | downloads MBTA bus data 2024 + 2025 (~720 MB, checked against the exact files used) and unpacks `inputs/` | 5-10 min |
+| `steps\2_prepare_data.bat` | ingest, clean, external data (weather, GTFS, events, calendar, ridership, prediction accuracy), merge, features | ~1 h |
+| `steps\3_run_tests.bat` | pytest: leakage, features, joins, explainability, website | few min |
+| `steps\4_train_models.bat` | 6 models x 2 modes. **F = Fast**: re-uses the tuned settings in `reports/best_params.json` (same results, no search). **S = Full**: repeats the Optuna / grid search | Fast ≈ 1 h, Full ≈ 2.5-3 h |
+| `steps\5_explain_and_experiments.bat` | learning curve, ablation, drift, SHAP, surrogate rules, LLM narratives | ~1.5 h |
+| `steps\6_extensions.bat` | propagation, chronic segments, severity, regression, conformal, bunching | ~1 h |
+| `steps\7_notebooks.bat` | rebuilds and executes notebooks 02-07 with outputs and figures (for presenting each step) | ~30 min |
+| `steps\8_build_app_data.bat` | website tables (`reports/app`) | few min |
+| `steps\9_build_thesis.bat` | `docs/report/TransitPulse_Thesis.docx` + `.pdf` | few min |
+
+Requirements: Windows, internet, ~25 GB free disk, 16 GB RAM. Each step writes `logs/pipeline_<step>.log`. If a step
+fails, fix the cause and re-run that step's script (or `python pipeline.py all --from <step>`). Same commands without
+the .bat files: `python pipeline.py list`.
+
+`inputs/` holds the two sources that cannot be downloaded by script (MBTA OPMI portals): bus ridership Fall 2023 + Fall
+2024 and the MBTA prediction-accuracy CSV.
+
 ## Project structure
 
 ```
@@ -54,7 +79,9 @@ Roopa Project/
 │   ├── 03_External_Data.ipynb  external data integration & validation
 │   ├── 04_Feature_Engineering.ipynb
 │   ├── 05_Models.ipynb · 06_Explainability.ipynb · 07_Extensions.ipynb
-├── models/                     trained models (git-ignored; re-create with the commands below)
+├── models/                     trained models (only XGB_*.json in git; the rest re-created by steps\4_train_models.bat)
+├── inputs/                     manually downloaded inputs bundled for reproducibility (ridership, prediction accuracy)
+├── steps/                      double-click scripts for each pipeline step (see above); pipeline.py runs them
 ├── reports/                    CSV results, xai/, ext/, app/, figures/ (eda_, p1_ … p5_)
 ├── docs/                       thesis chapters 00–09, 99 future work, decision_log.md; report/ = Word + PDF
 ├── logs/                       run logs, llm.log (API key problems), live.log
@@ -63,7 +90,7 @@ Roopa Project/
 └── requirements.txt
 ```
 
-## Reproduce
+## Reproduce (manual commands, same as the scripts above)
 
 ```powershell
 python -m venv .venv; .\.venv\Scripts\pip install -r requirements.txt

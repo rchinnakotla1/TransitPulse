@@ -42,3 +42,8 @@
 2026-11-08 20:20:39,453 WARNING MBTA request failed /predictions: offline test
 2026-11-08 20:20:39,456 WARNING weather failed: offline test
 2026-11-08 20:20:50,301 WARNING MBTA request failed /predictions: offline test
+2026-11-12 14:56:46,734 WARNING MBTA rate limit /predictions
+2026-11-12 14:56:46,740 WARNING MBTA request failed /predictions: offline test
+2026-11-12 14:56:46,741 WARNING MBTA request failed /predictions: offline test
+2026-11-12 14:56:46,744 WARNING weather failed: offline test
+2026-11-12 14:56:58,288 WARNING MBTA request failed /predictions: offline test

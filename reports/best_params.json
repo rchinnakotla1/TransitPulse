@@ -1,0 +1,62 @@
+{
+  "planning": {
+    "B0": {
+      "rule": "hist_stop_hour"
+    },
+    "LR": {
+      "C": 0.1
+    },
+    "DT": {
+      "max_depth": 10
+    },
+    "RF": {
+      "max_depth": 22
+    },
+    "XGB": {
+      "max_depth": 7,
+      "min_child_weight": 2.662904839829043,
+      "subsample": 0.9878338511058234,
+      "colsample_bytree": 0.8875664116805573,
+      "reg_lambda": 14.514940016485882,
+      "max_cat_threshold": 103,
+      "n_estimators_refit": 401,
+      "n_estimators_valid": 349
+    },
+    "LGB": {
+      "num_leaves": 127,
+      "min_child_samples": 50,
+      "n_estimators_refit": 211,
+      "n_estimators_valid": 184
+    }
+  },
+  "operational": {
+    "B0": {
+      "rule": "hist_stop_hour | prev_tp_delayed"
+    },
+    "LR": {
+      "C": 1.0
+    },
+    "DT": {
+      "max_depth": 14
+    },
+    "RF": {
+      "max_depth": 22
+    },
+    "XGB": {
+      "max_depth": 5,
+      "min_child_weight": 21.521716855765124,
+      "subsample": 0.8601536946870588,
+      "colsample_bytree": 0.5152062046706009,
+      "reg_lambda": 0.5795617449347594,
+      "max_cat_threshold": 21,
+      "n_estimators_refit": 899,
+      "n_estimators_valid": 782
+    },
+    "LGB": {
+      "num_leaves": 127,
+      "min_child_samples": 50,
+      "n_estimators_refit": 303,
+      "n_estimators_valid": 264
+    }
+  }
+}
