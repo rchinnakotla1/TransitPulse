@@ -6,6 +6,8 @@ __pycache__/
 
 .env
 .streamlit/secrets.toml
-models/
+models/*
+!models/XGB_planning.json
+!models/XGB_operational.json
 
 .pytest_cache/
