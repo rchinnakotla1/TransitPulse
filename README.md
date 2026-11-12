@@ -14,6 +14,16 @@ rider communications) in a Streamlit website with a live mode.
 | Size | 2025: 9.82 M cleaned stop events (28.8 % delayed) · 2024: 9.26 M (37.3 % delayed) |
 | Target | `delayed = 1` if actual − scheduled > 300 s |
 
+## Quick start (new Windows PC)
+
+1. `git clone https://github.com/rchinnakotla1/TransitPulse.git`
+2. Double-click **`setup.bat`** (one time). It installs Python 3.13 if missing, creates `.venv`, installs the exact
+   library versions from `requirements-lock.txt`, and creates `.env` from `.env.example`.
+3. Open `.env` in Notepad and paste your `OPENAI_API_KEY` (and optionally `MBTA_API_KEY`).
+4. Double-click **`run.bat`**. The website opens at http://localhost:8501.
+
+No retraining is needed: the deployed XGBoost models (`models/XGB_*.json`) and all app data (`reports/`) are in the repo.
+
 ## Project structure
 
 ```
